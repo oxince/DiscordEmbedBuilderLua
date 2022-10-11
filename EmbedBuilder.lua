@@ -71,7 +71,7 @@ function MessageEmbed.SetTimestamp(self)
 end
 
 function GetColorType(color) 
-  if string.find(tostring(color), '0x') then return 'rawhex' end;
+  if string.find(tostring(color), '0x') then return 'rawHex' end;
   if string.find(tostring(color), '#') then return 'hex' end;
   if tonumber(color) then return 'decimal' end;
   if type(color) == "vector3" then return 'rgb' end;
